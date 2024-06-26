@@ -1,0 +1,18 @@
+.header__login {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    width: 100%;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    color: #ffffff;
+    align-items: self-end;
+    justify-items: center;
+  }
+
+@media screen and (max-width: 880px) {
+.header__login {
+    display: none;
+  }
+}

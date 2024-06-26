@@ -1,0 +1,5 @@
+.card__places {
+  max-width: 282px;
+  list-style: none;
+  position: relative;
+}

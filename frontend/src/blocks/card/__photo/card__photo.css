@@ -1,0 +1,13 @@
+.card__photo {
+  display: block;
+  margin: 0;
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card__photo:hover {
+  opacity: 60%;
+  transition: 0.2s;
+}

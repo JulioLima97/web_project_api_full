@@ -1,0 +1,18 @@
+.button-edit {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 100%;
+  background-color: black;
+  border: 2px white solid;
+}
+
+.button-edit:hover {
+  opacity: 60%;
+  transition: 0.2s;
+}

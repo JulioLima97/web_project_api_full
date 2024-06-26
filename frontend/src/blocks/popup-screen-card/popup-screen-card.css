@@ -1,0 +1,14 @@
+.popup-screen-card {
+  width: 800px;
+  height: 570px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
+  .popup-screen-card {
+    top: 70%;
+  }
+}

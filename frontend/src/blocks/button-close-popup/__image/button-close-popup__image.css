@@ -1,0 +1,15 @@
+.button-close-popup__image {
+  margin: 0 auto;
+  opacity: 100%;
+}
+.button-close-popup__image:hover {
+  opacity: 60%;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 660px) {
+  .button-close-popup__image {
+    width: 26px;
+    height: 26px;
+  }
+}

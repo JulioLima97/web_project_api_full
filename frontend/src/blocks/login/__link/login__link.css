@@ -1,0 +1,7 @@
+.login__link {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+}

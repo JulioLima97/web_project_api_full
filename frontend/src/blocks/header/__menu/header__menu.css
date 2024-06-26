@@ -1,0 +1,14 @@
+.header__menu {
+    display: none;
+  }
+
+@media screen and (max-width: 880px) {
+.header__menu {
+    display: none;
+    color: #ffffff;
+    text-align: center;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    }
+}

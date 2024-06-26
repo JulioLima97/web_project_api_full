@@ -1,0 +1,5 @@
+.popup-screen-image {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}

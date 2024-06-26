@@ -1,0 +1,15 @@
+.popup__container_delete {
+  display: flex;
+  background-color: #FFFFFF;
+  width: 394px;
+  height: 181px;
+  padding-left: 45px;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 660px) {
+  .popup__container_delete {
+    width: 200px;
+  }
+}

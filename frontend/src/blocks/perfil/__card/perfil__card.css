@@ -1,0 +1,14 @@
+.perfil__card {
+  margin: 0;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  column-gap: 18px;
+}
+
+@media screen and (max-width: 970px) {
+  .perfil__card {
+    row-gap: 14px;
+  }
+}

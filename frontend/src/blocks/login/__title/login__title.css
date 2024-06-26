@@ -1,0 +1,11 @@
+.login__title {
+    color: white;
+    width: 358px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 54px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+ }

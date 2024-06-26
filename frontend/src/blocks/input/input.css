@@ -1,0 +1,30 @@
+.input {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 3px;
+  border: none;
+  border-bottom: 1px solid #545454;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input-error {
+  border-bottom: 3px solid red;
+}
+
+.input-error-visible {
+  display: block;
+  color: #FF0000;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 auto 15px;
+  width: 362px;
+}
+
+@media screen and (max-width: 660px) {
+  .input {
+    width: 100%;
+  }
+}

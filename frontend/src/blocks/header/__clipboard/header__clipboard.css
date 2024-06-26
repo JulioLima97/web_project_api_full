@@ -1,0 +1,11 @@
+.header__clipboard {
+    display: none;
+  }
+
+@media screen and (max-width: 880px) {
+.header__hamburguer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    }
+}

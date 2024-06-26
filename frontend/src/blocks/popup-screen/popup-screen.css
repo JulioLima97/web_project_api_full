@@ -1,0 +1,14 @@
+.popup-screen-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  height: 80vh;
+}
+
+@media screen and (max-width: 660px) {
+  .popup__container-img {
+    top: 70%;
+  }
+}

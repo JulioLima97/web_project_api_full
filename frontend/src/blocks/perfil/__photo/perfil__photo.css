@@ -1,0 +1,11 @@
+.perfil__photo {
+  display: flex;
+  align-self: center;
+  width: 135px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.perfil__photo:hover {
+  opacity: 0.2;
+}

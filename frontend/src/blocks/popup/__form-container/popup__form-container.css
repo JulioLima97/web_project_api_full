@@ -1,0 +1,15 @@
+.popup__form-container {
+    text-align: center;
+    width: 430px;
+
+    padding: 26px;
+    background: white;
+    border-radius: 10px;
+    grid-area: form;
+}
+
+@media screen and (max-width: 880px) {
+.popup__form-container {
+    width: unset;
+    }
+}
