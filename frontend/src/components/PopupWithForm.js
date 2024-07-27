@@ -20,8 +20,8 @@ export function PopupWithForm({
   }, []);
   return (
     <>
-      <section className={`popup ${name} ${isOpen ? "popup_opened" : ""}`}>
-        <div className="popup__container" id="cards-form">
+      <section className={`popup popup_type_${name} ${isOpen ? "popup_opened" : ""}`}>
+        <div className="popup__container">
           <button type="button" className="button-close-popup">
             <img
               className="button-close-popup__image popup__close"

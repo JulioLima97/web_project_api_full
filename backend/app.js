@@ -21,12 +21,14 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_DB);
 
 const app = express();
+app.use(cors());
+app.options('*', cors());
 
 const usersRoute = require('./routes/users');
 
 const cardsRoute = require('./routes/cards');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 
 app.use(express.json());
 
@@ -35,8 +37,7 @@ app.get('/crash-test', () => {
     throw new Error('O servidor travará agora');
   }, 0);
 });
-app.use(cors());
-app.options('*', cors());
+
 app.use(requestLogger);
 app.post('/signup', validateSignUp, userController.createUser);
 app.post('/signin', validateLogin, userController.login);
@@ -52,7 +53,10 @@ app.use((err, req, res, next) => {
   });
   next(new Error('Erro de autorização'));
 });
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`servidor iniciado na porta ${PORT}`)
+});
 
 //  "startfront": "cd frontend && npm start",
 //  "startback": "cd backend && npm start"
+//  "start": "cd frontend && npm start && cd .. && cd backend && npm start"

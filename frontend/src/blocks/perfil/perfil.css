@@ -1,7 +1,6 @@
 .perfil {
   max-width: 880px;
-  margin: 0 auto;
-  padding-top: 36px;
+  margin: 36px auto 46px;
   font-family: Inter;
   color: white;
   display: flex;

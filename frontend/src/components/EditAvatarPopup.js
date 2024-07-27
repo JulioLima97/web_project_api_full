@@ -34,7 +34,7 @@ export const EditAvatarPopup = ({ isOpen, onClose, onUpdateAvatar }) => {
             maxlenght={40}
             ref={avatarRef}
           />
-          <span className="avatar-input-error" />
+
         </label>
       </>
     </PopupWithForm>

@@ -54,13 +54,13 @@ function App() {
   EnableEsc();
 
   useEffect(() => {
+    
     const token = localStorage.getItem('token');
 
     if (token) {
       auth.checkToken(token).then((res) => {
-          if (res && isLoggedIn === false) {
+          if (res) {
             setIsLoggedIn(true);
-            console.log(isLoggedIn)
             history.push('/');
             setUserEmail(res.data.email);
           }
@@ -81,7 +81,7 @@ function App() {
     } else {
       setIsLoggedIn(false);
     }
-  }, [isLoggedIn, userEmail, history]);
+  }, [isLoggedIn, userEmail]);
 
   
   const handleEditProfileClick = () => {
@@ -109,7 +109,14 @@ function App() {
   };
 
   const handleUpdateAvatar = (avatar) => {
-    api.editAvatar(avatar).then(setCurrentUser).then(closeAllPopups);
+    api.editAvatar({ avatar: avatar })
+      .then((updatedUser) => {
+        setCurrentUser(updatedUser);
+        closeAllPopups();
+      })
+      .catch((error) => {
+        console.error('Error updating avatar:', error);
+      });
   };
 
   const handleCardLike = (card) => {
@@ -127,11 +134,14 @@ function App() {
       setSelectedCardToDelete("");
     });
   };
-
-  const handleAddPlaceSubmit = (name, link) => {
-    api.addCard(name, link).then((newCard) => setCards([newCard, ...cardsApp])).then(closeAllPopups);
-  };
-
+  
+  function handleAddPlaceSubmit(name, link) {
+    api
+      .addCard(name, link)
+      .then((newCard) => setCards([newCard, ...cardsApp]))
+      .then(closeAllPopups);
+  }
+  
   const closeAllPopups = () => {
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);

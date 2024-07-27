@@ -1,7 +1,3 @@
 .card__like {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    margin: 22px 7px 0 0;
 }

@@ -7,6 +7,7 @@ import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 import Header from './Header';
 
 function Main({
+  onClick,
   onEditAvatarClick,
   onEditProfileClick,
   onAddPlaceClick,
@@ -31,30 +32,30 @@ function Main({
           </button>
         }
       ></Header>
-      <section className="perfil">
+      <section className="perfil" onClick={onClick}>
         <div className="perfil__view">
-          <button type="button" className="perfil__edit-avatar">
+          <button onClick={onEditAvatarClick} className="perfil__edit-avatar">
             <img
               className="perfil__photo"
               src={userData.avatar}
               alt="foto de perfil do usuário"
-              onClick={onEditAvatarClick}
             />
           </button>
           <div className="perfil__card">
-            <h1 className="perfil__name">{userData.name}</h1>
+            <div className='perfil__text-button'>
+              <h1 className="perfil__name">{userData.name}</h1>
+              <button
+                type="button"
+                className="button-edit"
+                onClick={onEditProfileClick}
+              >
+                <img
+                  src={buttonEdit}
+                  alt="desenho de uma caneta"
+                />
+              </button>
+            </div>
             <h2 className="perfil__profission">{userData.about}</h2>
-            <button
-              type="button"
-              className="button-edit"
-              onClick={onEditProfileClick}
-            >
-              <img
-                className="perfil__edit-button-img"
-                src={buttonEdit}
-                alt="desenho de uma caneta"
-              />
-            </button>
           </div>
         </div>
         <button type="button" className="button-add" onClick={onAddPlaceClick}>
@@ -66,7 +67,8 @@ function Main({
         </button>
       </section>
       <section className="card">
-        <ul className="card__template card">
+        <template id="template" />
+        <ul className="card__template">
           {cardsApp.map((card) => (
             <Card
               productData={card}
@@ -78,7 +80,6 @@ function Main({
             />
           ))}
         </ul>
-        <template id="template" />
       </section>
     </>
   );

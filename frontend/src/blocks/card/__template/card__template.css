@@ -1,0 +1,14 @@
+.card__template {
+    display: flex;
+    width: 69%;
+    max-width: 880px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: Inter;
+    color: #000;
+    column-gap: 17px;
+    row-gap: 20px;
+  }
