@@ -1,4 +1,5 @@
 const Card = require('../models/cards');
+
 const ERROR_NOT_FOUND = 404;
 const ERROR_FETCH = 500;
 const ERROR_INVALID_DATA = 400;

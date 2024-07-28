@@ -17,7 +17,7 @@ export function PopupWithForm({
         onClose();
       }
     });
-  }, []);
+  }, [onClose]);
   return (
     <>
       <section className={`popup popup_type_${name} ${isOpen ? "popup_opened" : ""}`}>

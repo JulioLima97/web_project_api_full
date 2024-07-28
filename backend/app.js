@@ -53,10 +53,4 @@ app.use((err, req, res, next) => {
   });
   next(new Error('Erro de autorização'));
 });
-app.listen(PORT, () => {
-  console.log(`servidor iniciado na porta ${PORT}`)
-});
-
-//  "startfront": "cd frontend && npm start",
-//  "startback": "cd backend && npm start"
-//  "start": "cd frontend && npm start && cd .. && cd backend && npm start"
+app.listen(PORT);

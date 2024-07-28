@@ -70,7 +70,6 @@ module.exports.login = (req, res, next) => {
         error.status = 404;
         throw error;
       }
-      console.log("entrei")
       return bcrypt.compare(password, user.password).then((isMatched) => {
         if (!isMatched) {
           const error = new Error('Email ou senha incorretos.');

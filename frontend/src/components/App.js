@@ -81,7 +81,7 @@ function App() {
     } else {
       setIsLoggedIn(false);
     }
-  }, [isLoggedIn, userEmail]);
+  }, [history, isLoggedIn, userEmail]);
 
   
   const handleEditProfileClick = () => {
