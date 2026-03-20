@@ -201,5 +201,8 @@
     "wrappy": "^1.0.2",
     "yocto-queue": "^0.1.0"
   },
+  "overrides": {
+    "tar": "7.5.11"
+  },
   "keywords": []
 }
