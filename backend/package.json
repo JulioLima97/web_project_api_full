@@ -136,7 +136,7 @@
     "levn": "^0.4.1",
     "locate-path": "^6.0.0",
     "lodash.merge": "^4.6.2",
-    "minimatch": "^3.1.2",
+    "minimatch": "^3.1.5",
     "minimist": "^1.2.8",
     "mongoose": "^8.3.2",
     "ms": "^2.1.2",
