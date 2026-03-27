@@ -138,7 +138,7 @@
     "lodash.merge": "^4.6.2",
     "minimatch": "^3.1.5",
     "minimist": "^1.2.8",
-    "mongoose": "^8.3.2",
+    "mongoose": "^8.9.5",
     "ms": "^2.1.2",
     "natural-compare": "^1.4.0",
     "object-inspect": "^1.13.1",
